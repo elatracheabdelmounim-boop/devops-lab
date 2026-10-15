@@ -7,3 +7,5 @@ scrape_configs:
     static_configs: [{targets: ["node-exporter:9100"]}]
   - job_name: cadvisor
     static_configs: [{targets: ["cadvisor:8080"]}]
+  - job_name: nodes
+    static_configs: [{targets: ["192.168.61.11:9100", "192.168.61.12:9100"]}]
